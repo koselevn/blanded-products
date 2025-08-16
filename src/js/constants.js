@@ -1,3 +1,9 @@
+
+export const STORAGE_KEYS = {
+    CART: "cart",
+    WISHLIST: "wishlist",
+    THEME: "theme"
+}
 export const API_BASE_URL = "https://dummyjson.com/";
 export const API_ENDPOINTS = {
     PRODUCTS: "products",
