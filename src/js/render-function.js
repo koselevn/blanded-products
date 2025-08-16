@@ -26,3 +26,23 @@ export function renderProducts(products) {
   const markup = templateProducts(products);
   refs.productsList.insertAdjacentHTML('beforeend', markup);
 }
+
+
+
+
+
+export function renderCategories(categories) {
+
+    const allCategories = ["All", ...categories];
+
+    const markup = allCategories.map((category) => `
+        <li class="categories__item">
+          <button type="button" class="categories__btn">
+            ${category}
+          </button>
+        </li>`
+      ).join("");
+
+  refs.categoriesList.innerHTML = markup;
+  
+}
